@@ -8,22 +8,7 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <div className="text-tx font-mono text-sm leading-relaxed antialiased">
-    <div className="max-w-[900px] mx-auto px-8">
-
-      <nav className="flex gap-3 items-center py-5 top-0 z-50">
-        <img src="/logo.png" alt="Starliner" className="h-8 w-8 shrink-0 rounded-md" />
-        <a  className="flex items-center gap-2 font-bold text-[1rem] no-underline mr-6 shrink-0">
-          Starliner
-        </a>
-
-        <div className="flex items-center ml-auto shrink-0">
-          <a href="https://starliner.app" target="_blank" className="text-tx text-[0.9rem] no-underline hover:text-blue-10 transition-colors">Get started</a>
-          <span className="text-border px-3 select-none">|</span>
-          <a href="mailto:mail@starliner.dev" className="bg-violet-10 text-white cursor-pointer py-[0.25rem] rounded px-4 text-[0.9rem] font-semibold no-underline hover:opacity-90 transition-opacity">Get in touch</a>
-        </div>
-      </nav>
-
+  return (
       <main className="py-14 pb-20">
         <div className="border-l-[3px] pl-4 mb-6">
           <h2 className="text-[0.9rem] font-bold text-tx">The open source DevOps platform for engineering teams</h2>
@@ -119,11 +104,5 @@ export default function Home() {
         </div>
 
       </main>
-
-      <footer
-          className="border-t border-border py-6 flex justify-between items-center text-[0.78rem] text-tx3 flex-wrap gap-2">
-        <span>© 2026 Starliner. All rights reserved.</span>
-      </footer>
-    </div>
-  </div>
+  );
 }
