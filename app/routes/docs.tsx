@@ -1,5 +1,6 @@
 import type { Route } from "./+types/docs";
 import { Link } from "react-router";
+import { ArrowLeft } from "lucide-react";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -12,7 +13,7 @@ export default function Docs() {
   return (
         <main className="py-14 pb-20">
           <Link to="/" className="inline-flex items-center gap-2 text-tx2 text-[0.85rem] no-underline hover:text-tx transition-colors mb-6">
-            ← back
+            <ArrowLeft className="w-4 h-4" /> <span>back</span>
           </Link>
           <div className="border-l-[3px] pl-4 mb-6">
             <h2 className="text-[0.9rem] font-bold text-tx">Documentation</h2>
@@ -96,7 +97,7 @@ export default function Docs() {
             </div>
           </section>
 
-          <div className="mt-16 p-10 border border-border rounded">
+          <div className="mt-16 p-6 sm:p-10 border border-border rounded">
             <div className="border-l-[3px] pl-4 mb-6">
               <h2 className="text-[0.9rem] font-bold text-tx">Need help?</h2>
             </div>

@@ -47,7 +47,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <div className="text-tx font-mono text-sm leading-relaxed antialiased">
-      <div className="max-w-[900px] mx-auto px-8">
+      <div className="max-w-[900px] mx-auto px-4 sm:px-8">
         <Nav />
         <Outlet />
         <Footer />

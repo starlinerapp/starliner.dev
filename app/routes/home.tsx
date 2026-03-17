@@ -55,40 +55,52 @@ export default function Home() {
           </div>
 
           <ul className="list-none mb-6">
-            <li className="flex gap-4 items-start py-[0.6rem] border-b border-border text-[0.88rem]">
-              <span className="shrink-0">*</span>
-              <span className="text-tx font-semibold min-w-[220px]">Digital Sovereignty</span>
-              <span className="text-tx2">Deploy to your preferred public cloud, your own bare metal, or Starliner's managed offering. Kubernetes under the hood means zero vendor lock-in. Regulated environments can enforce data residency from day one.</span>
+            <li className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start py-[0.6rem] border-b border-border text-[0.88rem]">
+              <div className="flex gap-2 sm:gap-4 items-start">
+                <span className="shrink-0">*</span>
+                <span className="text-tx font-semibold sm:min-w-[220px]">Digital Sovereignty</span>
+              </div>
+              <span className="text-tx2 pl-5 sm:pl-0">Deploy to your preferred public cloud, your own bare metal, or Starliner's managed offering. Kubernetes under the hood means zero vendor lock-in. Regulated environments can enforce data residency from day one.</span>
             </li>
-            <li className="flex gap-4 items-start py-[0.6rem] border-b border-border text-[0.88rem]">
-              <span className="shrink-0">*</span>
-              <span className="text-tx font-semibold min-w-[220px]">Environment Management</span>
-              <span className="text-tx2">Every pull request gets an isolated Preview environment automatically. Merge to deploy to Staging. Promote to Production after QA. Environments can also be cloned for AI agent workloads against realistic datasets.</span>
+            <li className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start py-[0.6rem] border-b border-border text-[0.88rem]">
+              <div className="flex gap-2 sm:gap-4 items-start">
+                <span className="shrink-0">*</span>
+                <span className="text-tx font-semibold sm:min-w-[220px]">Environment Management</span>
+              </div>
+              <span className="text-tx2 pl-5 sm:pl-0">Every pull request gets an isolated Preview environment automatically. Merge to deploy to Staging. Promote to Production after QA. Environments can also be cloned for AI agent workloads against realistic datasets.</span>
             </li>
-            <li className="flex gap-4 items-start py-[0.6rem] border-b border-border text-[0.88rem]">
-              <span className="shrink-0">*</span>
-              <span className="text-tx font-semibold min-w-[220px]">Deployment Strategies</span>
-              <span className="text-tx2">Rolling updates, canary releases, blue-green deployments, and feature flags — all available out of the box.</span>
+            <li className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start py-[0.6rem] border-b border-border text-[0.88rem]">
+              <div className="flex gap-2 sm:gap-4 items-start">
+                <span className="shrink-0">*</span>
+                <span className="text-tx font-semibold sm:min-w-[220px]">Deployment Strategies</span>
+              </div>
+              <span className="text-tx2 pl-5 sm:pl-0">Rolling updates, canary releases, blue-green deployments, and feature flags — all available out of the box.</span>
             </li>
-            <li className="flex gap-4 items-start py-[0.6rem] border-b border-border text-[0.88rem]">
-              <span className="shrink-0">*</span>
-              <span className="text-tx font-semibold min-w-[220px]">Built-in Observability</span>
-              <span className="text-tx2">Hardware metrics, system telemetry, alerting, and extensible custom application metrics — all configured automatically.</span>
+            <li className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start py-[0.6rem] border-b border-border text-[0.88rem]">
+              <div className="flex gap-2 sm:gap-4 items-start">
+                <span className="shrink-0">*</span>
+                <span className="text-tx font-semibold sm:min-w-[220px]">Built-in Observability</span>
+              </div>
+              <span className="text-tx2 pl-5 sm:pl-0">Hardware metrics, system telemetry, alerting, and extensible custom application metrics — all configured automatically.</span>
             </li>
-            <li className="flex gap-4 items-start py-[0.6rem] border-b border-border text-[0.88rem]">
-              <span className="shrink-0">*</span>
-              <span className="text-tx font-semibold min-w-[220px]">Compliance by Default</span>
-              <span className="text-tx2">Every deployment follows the same hardened security baseline aligned with HIPAA, SOC 2, and ISO 27001. Compliance is enforced at the platform level.</span>
+            <li className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start py-[0.6rem] border-b border-border text-[0.88rem]">
+              <div className="flex gap-2 sm:gap-4 items-start">
+                <span className="shrink-0">*</span>
+                <span className="text-tx font-semibold sm:min-w-[220px]">Compliance by Default</span>
+              </div>
+              <span className="text-tx2 pl-5 sm:pl-0">Every deployment follows the same hardened security baseline aligned with HIPAA, SOC 2, and ISO 27001. Compliance is enforced at the platform level.</span>
             </li>
-            <li className="flex gap-4 items-start py-[0.6rem] text-[0.88rem]">
-              <span className="shrink-0">*</span>
-              <span className="text-tx font-semibold min-w-[220px]">Internal Developer Platform</span>
-              <span className="text-tx2">Organisations can customise golden paths, security baselines, and deployment workflows to match their own policies and operational requirements.</span>
+            <li className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start py-[0.6rem] text-[0.88rem]">
+              <div className="flex gap-2 sm:gap-4 items-start">
+                <span className="shrink-0">*</span>
+                <span className="text-tx font-semibold sm:min-w-[220px]">Internal Developer Platform</span>
+              </div>
+              <span className="text-tx2 pl-5 sm:pl-0">Organisations can customise golden paths, security baselines, and deployment workflows to match their own policies and operational requirements.</span>
             </li>
           </ul>
         </section>
 
-        <div className="mt-16 p-10 border border-border rounded">
+        <div className="mt-16 p-6 sm:p-10 border border-border rounded">
           <div className="border-l-[3px] pl-4 mb-6">
             <h2 className="text-[0.9rem] font-bold text-tx">Get started with Starliner</h2>
           </div>
