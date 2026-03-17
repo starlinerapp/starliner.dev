@@ -7,9 +7,8 @@ export function Nav() {
 
   return (
     <nav className="flex gap-3 items-center py-5 top-0 z-50">
-      <img src="/logo.png" alt="Starliner" className="h-8 w-8 shrink-0 rounded-md" />
-      <Link to="/" className="flex items-center gap-2 font-bold text-[1rem] no-underline mr-6 shrink-0 hover:text-blue-10 transition-colors">
-        Starliner
+      <Link to="/" className="shrink-0">
+        <img src="/logo.png" alt="Starliner" className="h-6 shrink-0 rounded-md" />
       </Link>
 
       <div className="flex items-center ml-auto shrink-0">
