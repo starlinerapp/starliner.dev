@@ -13,6 +13,7 @@ import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
 
 export const links: Route.LinksFunction = () => [
+  { rel: "icon", type: "image/png", href: "/asteriks.png" },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
