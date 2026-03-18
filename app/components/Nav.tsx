@@ -20,8 +20,6 @@ export function Nav() {
           <span className="text-border px-3 select-none">|</span>
           <Link to="/docs" className={`text-[0.9rem] no-underline ${isDocsPage ? "text-blue-10" : "text-tx hover:text-blue-10 transition-colors"}`}>Docs</Link>
           <span className="text-border px-3 select-none">|</span>
-          <a href="https://starliner.app" target="_blank" className="text-tx text-[0.9rem] no-underline hover:text-blue-10 transition-colors">Get started</a>
-          <span className="text-border px-3 select-none">|</span>
           <a href="https://join.slack.com/t/starliner-community/shared_invite/zt-3t3gf6wg1-4auCOCnHaG6UarPVkjTUdA" target="_blank" className="text-tx text-[0.9rem] no-underline hover:text-blue-10 transition-colors">Slack community</a>
           <span className="text-border px-3 select-none">|</span>
           <a href="mailto:mail@starliner.dev" className="bg-violet-10 text-white cursor-pointer py-[0.25rem] rounded px-4 text-[0.9rem] font-semibold no-underline hover:opacity-90 transition-opacity inline-flex items-center">Get in touch</a>
@@ -48,7 +46,6 @@ export function Nav() {
         <div className="sm:hidden flex flex-col gap-3 pt-4 pb-2 pl-2 border-b border-border">
           <Link to="/" onClick={() => setMenuOpen(false)} className={`text-[0.9rem] no-underline ${isHomePage ? "text-blue-10" : "text-tx hover:text-blue-10 transition-colors"}`}>Home</Link>
           <Link to="/docs" onClick={() => setMenuOpen(false)} className={`text-[0.9rem] no-underline ${isDocsPage ? "text-blue-10" : "text-tx hover:text-blue-10 transition-colors"}`}>Docs</Link>
-          <a href="https://starliner.app" target="_blank" className="text-tx text-[0.9rem] no-underline hover:text-blue-10 transition-colors">Get started</a>
           <a href="https://join.slack.com/t/starliner-community/shared_invite/zt-3t3gf6wg1-4auCOCnHaG6UarPVkjTUdA" target="_blank" className="text-tx text-[0.9rem] no-underline hover:text-blue-10 transition-colors">Slack community</a>
           <a href="mailto:mail@starliner.dev" className="bg-violet-10 text-white cursor-pointer py-[0.25rem] rounded mb-2 px-4 text-[0.9rem] font-semibold no-underline hover:opacity-90 transition-opacity w-fit inline-flex items-center">Get in touch</a>
         </div>
