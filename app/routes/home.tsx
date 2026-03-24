@@ -20,12 +20,6 @@ export default function Home() {
           and compliance enforced by default.
         </p>
 
-        <p className="mb-5 text-tx text-[0.88rem] max-w-[820px]">
-          Starliner is built for engineering teams that need the <a  className="text-blue-10 no-underline">speed
-          of modern PaaS</a> and the <a  className="text-blue-10 no-underline">auditability</a> of
-          enterprise infrastructure, without choosing between the two.
-        </p>
-
         <section id="platform" className="pt-12 border-t border-border">
           <div className="border-l-[3px] pl-4 mb-6">
             <h2 className="text-[0.9rem] font-bold text-tx">Why Starliner</h2>
