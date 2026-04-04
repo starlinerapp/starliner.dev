@@ -16,9 +16,9 @@ export function Nav() {
 
         {/* Desktop Nav */}
         <div className="hidden sm:flex items-center ml-auto shrink-0">
-          <Link to="/" className={`text-[0.9rem] no-underline ${isHomePage ? "text-blue-10" : "text-tx hover:text-blue-10 transition-colors"}`}>Home</Link>
+          <a href="mailto:mail@starliner.dev" className="text-white cursor-pointer py-[0.25rem] rounded px-4 text-[0.9rem] font-semibold no-underline hover:opacity-90 transition-opacity inline-flex items-center">Get in touch</a>
           <span className="text-border px-3 select-none">|</span>
-          <a href="mailto:mail@starliner.dev" className="bg-violet-10 text-white cursor-pointer py-[0.25rem] rounded px-4 text-[0.9rem] font-semibold no-underline hover:opacity-90 transition-opacity inline-flex items-center">Get in touch</a>
+          <a href="https://starliner.app" target="_blank" className="bg-violet-10 text-white cursor-pointer py-[0.25rem] rounded px-4 text-[0.9rem] font-semibold no-underline hover:opacity-90 transition-opacity inline-flex items-center">Early Access</a>
         </div>
 
         {/* Mobile Hamburger */}
