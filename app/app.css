@@ -8,13 +8,3 @@
   --color-gray-1: #111111;
   --color-blue-10: #3B9EFF;
 }
-
-html,
-body {
-  @apply dark:bg-gray-1;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
-}
-

@@ -15,7 +15,7 @@ export default function Home() {
         </div>
 
         <p className="mb-5 text-tx text-[0.88rem] max-w-[820px]">
-          Starliner gives your team the simplicity of modern PaaS solutions while running entirely on <a className="text-blue-10 no-underline">your
+          Starliner gives your team the simplicity of modern PaaS solutions while running entirely on <a className="text-blue-500 no-underline">your
           own infrastructure</a>. Transform any cloud or bare metal into a full Platform as a Service, with security
           and compliance enforced by default.
         </p>
