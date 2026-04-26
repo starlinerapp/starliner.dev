@@ -1,19 +1,70 @@
-import { Link, useLocation } from "react-router";
+import { Link } from "react-router";
 import { useState } from "react";
 
 export function Nav() {
+  const [open, setOpen] = useState(false);
 
   return (
-    <nav className="py-5 top-0 z-50">
-      <div className="flex items-center">
-        <Link to="/" className="shrink-0">
-          <img src="/logo.png" alt="Starliner" className="h-9 shrink-0 rounded-md" />
-        </Link>
-        <div className="flex items-center ml-auto shrink-0 gap-1">
-          <a href="https://docs.starliner.dev" target="_blank" className="cursor-pointer text-gray-1 py-[0.25rem] rounded px-4 text-[0.9rem] font-semibold no-underline transition-opacity inline-flex items-center">Documentation</a>
-          <a href="https://starliner.app" target="_blank" className="bg-violet-10 text-white cursor-pointer py-[0.25rem] rounded px-4 text-[0.9rem] font-semibold no-underline hover:opacity-90 transition-opacity inline-flex items-center">Early Access</a>
+      <nav className="py-4 top-0 z-50">
+        <div className="flex items-center justify-between">
+          <Link to="/" className="shrink-0">
+            <img
+                src="/logo.png"
+                alt="Starliner"
+                className="h-8 md:h-9 rounded-md"
+            />
+          </Link>
+
+          {/* Desktop nav */}
+          <div className="hidden md:flex items-center gap-2">
+            <a
+                href="https://docs.starliner.dev"
+                target="_blank"
+                className="text-gray-1 py-1 px-4 text-sm font-semibold"
+            >
+              Documentation
+            </a>
+            <a
+                href="https://starliner.app"
+                target="_blank"
+                className="bg-violet-10 text-white py-1 px-4 text-sm font-semibold rounded hover:opacity-90"
+            >
+              Early Access
+            </a>
+          </div>
+
+          {/* Mobile hamburger */}
+          <button
+              onClick={() => setOpen(!open)}
+              className="md:hidden flex items-center justify-center w-10 h-10"
+          >
+            <div className="space-y-1">
+              <span className="block w-5 h-[2px] bg-black" />
+              <span className="block w-5 h-[2px] bg-black" />
+              <span className="block w-5 h-[2px] bg-black" />
+            </div>
+          </button>
         </div>
-      </div>
-    </nav>
+
+        {/* Mobile menu */}
+        {open && (
+            <div className="md:hidden mt-4 flex flex-col gap-3">
+              <a
+                  href="https://docs.starliner.dev"
+                  target="_blank"
+                  className="text-gray-1 py-2 text-sm font-semibold"
+              >
+                Documentation
+              </a>
+              <a
+                  href="https://starliner.app"
+                  target="_blank"
+                  className="bg-violet-10 text-white py-2 px-2 text-sm font-semibold rounded text-center"
+              >
+                Early Access
+              </a>
+            </div>
+        )}
+      </nav>
   );
 }
